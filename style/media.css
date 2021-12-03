@@ -1,0 +1,108 @@
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primary-background: #151437;
+        --primary-text-color: #FFFFFF;
+    }
+    
+    .header__logo::before{
+        content: url(../images/logo-dark.png);
+    }
+    
+    body{
+        background: var(--primary-background);
+    }
+    
+    .header__content-text{
+        color: var(--primary-text-color);
+    }
+    
+    .header__toggler{
+        color: var(--primary-text-color);
+    }
+
+    .main__about-text {
+        background: #7177F1;
+        color: var(--primary-text-color);
+    }
+    .main__about-content {
+        background: var(--primary-background);
+    }
+
+    .main__about-description {
+        color: var(--primary-text-color);
+    }
+
+    .accordion-button.collapsed {
+        background: var(--primary-background) !important;
+    }
+    .accordion-item {
+        border: none;
+    }
+    .main__works-link, .main__works-content{
+        background: var(--primary-background);
+    }
+    
+    .main__works-link.active{
+        color: var(--primary-background);
+    }
+    .main__works-description{
+        color: var(--primary-text-color);
+    }
+    .footer__link, .footer__contact{
+        color: var(--primary-text-color);
+    }
+}
+
+@media(max-width: 992px) {
+    .header__link, .header__button{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .main__about-img {
+        width: 100%;
+    }
+
+    .main__about-content{
+        margin-top: 15px;
+    }
+
+    .rectangle_5{
+        display: none;
+    }
+    .main__about-text{
+        top: -10px;
+        left: 120px;
+    }
+    .accordion {
+        margin-bottom: 20px;
+    }
+    .shape_2{
+        width: 100%;
+    }
+}
+
+@media(max-width: 560px ) {
+    .header__content-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rectangle_6 {
+        display: none;
+    }
+}
+
+@media(max-width: 375px) {
+    .header__content-skills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__about-text {
+        top: -30px;
+        left: 100px;
+    }
+    .main__about-btn {
+        margin: auto;
+    }
+}
